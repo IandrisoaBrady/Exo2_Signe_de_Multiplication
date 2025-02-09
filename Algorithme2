@@ -1,0 +1,18 @@
+Algorithme: Signe du produit de deux nombres
+Variables:
+	a,b: réel;
+Début
+	AFFICHER("Entrez un nombre réel non nul a");
+	LIRE(a);
+	AFFICHER("Entrez un nombre réel non nul b");
+	LIRE(b);
+	Si(a=0 ou b=0) alors
+		AFFICHER("Ce produit est nul");
+		Sinon Si ((a<0 ET b<0) OU (a>0 ET a>0))
+			AFFICHER("Le produit",a,"x",b," est positif");
+			Sinon Si((a<0 ET b>0) OU (a>0 ET b<0))alors
+				AFFICHER("Le produit",a,"x",b,"est négatif");
+				FinSi
+			FinSi
+	FinSi
+Fin
